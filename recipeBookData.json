@@ -1,0 +1,94 @@
+{
+  "uuid": "d1181c99-ec8f-4efb-aece-c5047186f52c",
+  "lastMigration": 33,
+  "name": "RecipeBookData",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "0.0.0.0",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "e9c8eb09-7803-4248-b98a-c859b490fbaf",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "recipes",
+      "responses": [
+        {
+          "uuid": "2c7a1573-9caa-40e2-8355-7bef023f2a70",
+          "body": "{\r\n  \"recetas\": [\r\n    {\r\n      \"nombre\": \"Pasta del Bosque\",\r\n      \"autor\": \"Lucía Martínez\",\r\n      \"image_link\": \"https://example.com/images/pastaBosque.jpg\",\r\n      \"procedimiento\": [\"Hervir la pasta\", \"Saltear champiñones\", \"Mezclar con crema y servir\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Tacos del Sol\",\r\n      \"autor\": \"Carlos Rivera\",\r\n      \"image_link\": \"https://example.com/images/tacosSol.jpg\",\r\n      \"procedimiento\": [\"Preparar tortillas\", \"Cocinar carne\", \"Armar tacos y agregar salsas\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Ensalada Verde Vital\",\r\n      \"autor\": \"María López\",\r\n      \"image_link\": \"https://example.com/images/ensaladaVerde.jpg\",\r\n      \"procedimiento\": [\"Lavar vegetales\", \"Cortar y mezclar\", \"Agregar aderezo\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Sopa de Invierno\",\r\n      \"autor\": \"Antonio Pérez\",\r\n      \"image_link\": \"https://example.com/images/sopaInvierno.jpg\",\r\n      \"procedimiento\": [\"Hervir vegetales\", \"Agregar caldo\", \"Cocinar 30 minutos\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Pollo a la Miel\",\r\n      \"autor\": \"Sofía González\",\r\n      \"image_link\": \"https://example.com/images/polloMiel.jpg\",\r\n      \"procedimiento\": [\"Marinar pollo con miel\", \"Hornear por 45 minutos\", \"Servir con arroz\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Pizza Mediterránea\",\r\n      \"autor\": \"Javier Torres\",\r\n      \"image_link\": \"https://example.com/images/pizzaMed.jpg\",\r\n      \"procedimiento\": [\"Preparar masa\", \"Agregar ingredientes\", \"Hornear 20 minutos\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Risotto de Champiñones\",\r\n      \"autor\": \"Ana Ruiz\",\r\n      \"image_link\": \"https://example.com/images/risottoChampi.jpg\",\r\n      \"procedimiento\": [\"Sofreír arroz\", \"Agregar caldo poco a poco\", \"Añadir champiñones y queso\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Hamburguesa Casera\",\r\n      \"autor\": \"Tomás Díaz\",\r\n      \"image_link\": \"https://example.com/images/hamburguesa.jpg\",\r\n      \"procedimiento\": [\"Formar hamburguesas\", \"Cocinar en sartén\", \"Montar con pan y vegetales\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Tarta de Manzana\",\r\n      \"autor\": \"Elena Ramírez\",\r\n      \"image_link\": \"https://example.com/images/tartaManzana.jpg\",\r\n      \"procedimiento\": [\"Preparar masa\", \"Cortar manzanas\", \"Hornear con azúcar y canela\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Ceviche de Camarón\",\r\n      \"autor\": \"Luis Mendoza\",\r\n      \"image_link\": \"https://example.com/images/cevicheCamaron.jpg\",\r\n      \"procedimiento\": [\"Cocer camarones\", \"Marinar en limón\", \"Agregar cebolla, tomate y cilantro\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Paella del Mar\",\r\n      \"autor\": \"Isabel Navarro\",\r\n      \"image_link\": \"https://example.com/images/paellaMar.jpg\",\r\n      \"procedimiento\": [\"Saltear mariscos\", \"Agregar arroz y caldo\", \"Cocinar hasta secar\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Brownies Clásicos\",\r\n      \"autor\": \"Miguel Herrera\",\r\n      \"image_link\": \"https://example.com/images/brownies.jpg\",\r\n      \"procedimiento\": [\"Mezclar ingredientes\", \"Hornear por 30 minutos\", \"Dejar enfriar y cortar\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Arepas Venezolanas\",\r\n      \"autor\": \"Camila Romero\",\r\n      \"image_link\": \"https://example.com/images/arepas.jpg\",\r\n      \"procedimiento\": [\"Mezclar harina de maíz\", \"Formar arepas\", \"Cocinar en sartén y rellenar\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Croquetas de Jamón\",\r\n      \"autor\": \"Pedro Sánchez\",\r\n      \"image_link\": \"https://example.com/images/croquetas.jpg\",\r\n      \"procedimiento\": [\"Preparar bechamel con jamón\", \"Formar croquetas\", \"Empanar y freír\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Sushi Casero\",\r\n      \"autor\": \"Naomi Takeda\",\r\n      \"image_link\": \"https://example.com/images/sushi.jpg\",\r\n      \"procedimiento\": [\"Cocer arroz\", \"Enrollar con alga y pescado\", \"Cortar en piezas\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Pan de Ajo\",\r\n      \"autor\": \"Fernando Iglesias\",\r\n      \"image_link\": \"https://example.com/images/panAjo.jpg\",\r\n      \"procedimiento\": [\"Cortar pan\", \"Untar mezcla de ajo y mantequilla\", \"Hornear 10 minutos\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Curry de Garbanzos\",\r\n      \"autor\": \"Priya Desai\",\r\n      \"image_link\": \"https://example.com/images/curryGarbanzos.jpg\",\r\n      \"procedimiento\": [\"Cocinar cebolla y especias\", \"Agregar garbanzos\", \"Servir con arroz\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Chilaquiles Verdes\",\r\n      \"autor\": \"Alejandro Flores\",\r\n      \"image_link\": \"https://example.com/images/chilaquiles.jpg\",\r\n      \"procedimiento\": [\"Freír tortillas\", \"Bañar con salsa verde\", \"Agregar crema y queso\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Galletas de Avena\",\r\n      \"autor\": \"Natalia Vázquez\",\r\n      \"image_link\": \"https://example.com/images/galletasAvena.jpg\",\r\n      \"procedimiento\": [\"Mezclar avena y plátano\", \"Formar bolitas\", \"Hornear 15 minutos\"]\r\n    },\r\n    {\r\n      \"nombre\": \"Helado de Mango\",\r\n      \"autor\": \"Daniel Ortega\",\r\n      \"image_link\": \"https://example.com/images/heladoMango.jpg\",\r\n      \"procedimiento\": [\"Licuar mango con crema\", \"Congelar 4 horas\", \"Servir frío\"]\r\n    }\r\n  ]\r\n}\r\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "e9c8eb09-7803-4248-b98a-c859b490fbaf"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
