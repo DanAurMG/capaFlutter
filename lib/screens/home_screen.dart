@@ -2,21 +2,34 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:recipe_book/providers/recipes_provider.dart';
 import 'package:recipe_book/screens/recipe_detail.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
- 
+
+  @override
+  State  createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+
+  @override
+  void initState() {
+    super.initState();
+    Future.microtask(() =>
+      Provider.of<RecipesProvider>(context, listen: false).FetchRecipes()
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    final recipesProvider = Provider.of<RecipesProvider>(context, listen: false);
-    recipesProvider.FetchRecipes();
     return Scaffold(
       body: Consumer<RecipesProvider>(
         builder: (context, provider, child) {
           if(provider.isLoading){
             return const Center(child: CircularProgressIndicator(),);
           }else if(provider.recipes.isEmpty){
-            return const Center(child: Text("No hay recetas disponibles"),);
+            return Center(child: Text(AppLocalizations.of(context)!.noReceipts),);
           }else {
             return ListView.builder(
               itemCount: provider.recipes.length,
@@ -67,7 +80,7 @@ class HomeScreen extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => RecipeDetail(recipeName: recipe.nombre ),
+            builder: (context) => RecipeDetail(recipesData: recipe),
           ),
         );
       },
